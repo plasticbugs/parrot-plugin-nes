@@ -1,0 +1,12 @@
+emu2413 (YM2413/OPLL emulator, used for the VRC7 sound of mapper 85)
+Copyright (C) 2001 Mitsutaka Okazaki; modified for VRC7 by xodnizel.
+
+frank-nes's copy (emu2413/) no longer carries the notice; this is the one
+at the top of nes_emu/emu2413.cpp in libretro/QuickNES_Core
+(commit 26bb785c9deddb66a17717b21bb4e328f03ade32), word for word:
+
+/*
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications. To alter this software and redistribute it freely,
+if the origin of this software is not misrepresented.
+*/
