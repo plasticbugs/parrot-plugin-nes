@@ -26,8 +26,8 @@ include(${PARROTCART_SDK}/sdk/cvplugin.cmake)
 
 # The same source makes the same file, whenever it's built: the compiler's
 # __DATE__ and __TIME__ (the build date in the binary info) come from
-# SOURCE_DATE_EPOCH, fixed here at the tested build's day, 2026-11-18.
-set(BUILD_EPOCH 1795003200)
+# SOURCE_DATE_EPOCH, fixed here at the build's day, 2026-11-23.
+set(BUILD_EPOCH 1795435200)
 set(CMAKE_C_COMPILER_LAUNCHER ${CMAKE_COMMAND} -E env SOURCE_DATE_EPOCH=${BUILD_EPOCH})
 set(CMAKE_CXX_COMPILER_LAUNCHER ${CMAKE_COMMAND} -E env SOURCE_DATE_EPOCH=${BUILD_EPOCH})
 
@@ -71,6 +71,6 @@ cvpsram_use(nes)
 cvpad_use(nes)                              # USB game pads: the port is a host
 pico_enable_stdio_usb(nes 0)
 pico_enable_stdio_uart(nes 0)
-cvcart_plugin(nes ID parrotcart.nes NAME "NES" VERSION 0.4.8 BY "Parrot Cart"
+cvcart_plugin(nes ID parrotcart.nes NAME "NES" VERSION 0.4.10 BY "Parrot Cart"
               HOME /NES OPENS .nes USES usb-host psram ICON src/nes_icon.txt FILE_ICON src/nes_file_icon.txt HEAP
               README CART-README.md)

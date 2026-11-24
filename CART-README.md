@@ -18,7 +18,7 @@ On the ColecoVision controller:
 - Keypad 2 and 8 move the view up and down by 8 lines.
 - Keypad 5 puts the view back where it started.
 - Keypad 0 switches between smooth scrolling and scrolling by tiles.
-- Press RESET on the console to go back to the menu.
+- Press RESET on the console to go back to the menu, or hold both fire buttons and \* for 2 seconds (Select and Start on a USB pad).
 
 On a USB pad:
 
